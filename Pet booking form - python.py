@@ -1,0 +1,31 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+import time
+
+s=Service('C:\chromedriver_win32\chromedriver.exe')
+driver = webdriver.Chrome(service=s)
+driver.get("https://qahacking.guru")
+driver.set_window_size(1920, 1080)
+time.sleep(1)
+driver.execute_script("window.scrollBy(0,500)", "")
+time.sleep(1)
+driver.find_element(By.XPATH, "//*[@id='page#0-0-0']/div/div/div/div/div[3]/a").click()
+time.sleep(2)
+driver.execute_script("window.scrollBy(0,1080)", "")
+driver.find_element(By.ID, "firstName").send_keys("Kate")
+driver.find_element(By.ID, "lastName").send_keys("Vin")
+time.sleep(2)
+driver.find_element(By.ID, "userEmail").send_keys("k@mail.ru")
+driver.find_element(By.ID, "sex-1").click()
+time.sleep(2)
+driver.find_element(By.ID, "userNumber").send_keys("8-999-99-99-99")
+time.sleep(2)
+driver.find_element(By.ID, "date").send_keys("22-12-23")
+time.sleep(2)
+driver.execute_script("window.scrollBy(0,1080)", "")
+driver.find_element(By.ID, "hobbies-checkbox-3").click()
+time.sleep(2)
+driver.find_element(By.ID, "submit").click()
+time.sleep(2)
+print("Тест пройден. Ура!")

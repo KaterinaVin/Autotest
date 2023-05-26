@@ -1,0 +1,144 @@
+{
+  "id": "bdf891c8-f5f9-4b43-a454-7a481286133d",
+  "version": "2.0",
+  "name": "Sobaken",
+  "url": "https://qahacking.guru/",
+  "tests": [{
+    "id": "5d9a7f8f-e3ae-460a-89f3-fd1951c11f07",
+    "name": "open",
+    "commands": [{
+      "id": "ceba3ae4-0d9e-4271-acc1-8e6f707c2bfa",
+      "comment": "",
+      "command": "open",
+      "target": "https://qahacking.guru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93fc188e-dbc2-4594-8f26-1486afd2ef30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a287ef68-b643-4a8e-93e0-045aa013191d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uk-navbar-nav > li:nth-child(1) > a",
+      "targets": [
+        ["css=.uk-navbar-nav > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'О нас')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/index.php/about')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abc7c594-3d05-41ec-8f1b-4ad0ea0bee52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uk-navbar-nav > li:nth-child(2) > a",
+      "targets": [
+        ["css=.uk-navbar-nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Блог Джесси')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/index.php/news')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd29e8ed-f780-45fe-87af-66f5b30f2135",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scrollBy(0,1920)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2c2b93a-a0ad-49aa-b2fd-a59e634c9d37",
+      "comment": "",
+      "command": "click",
+      "target": "id=mod-rscontact-full-name-91",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71775856-6c57-4f47-b5b0-af3c570898bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=mod-rscontact-full-name-91",
+      "targets": [],
+      "value": "Katerina"
+    }, {
+      "id": "da9d2671-5560-43e5-a0e5-1527b9b7e304",
+      "comment": "",
+      "command": "type",
+      "target": "id=mod-rscontact-email-91",
+      "targets": [
+        ["id=mod-rscontact-email-91", "id"],
+        ["name=mod_rscontact_email", "name"],
+        ["css=#mod-rscontact-email-91", "css:finder"],
+        ["xpath=//input[@id='mod-rscontact-email-91']", "xpath:attributes"],
+        ["xpath=//form[@id='mod-rscontact-contact-form-91']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "k@mail.ru"
+    }, {
+      "id": "c4872e29-f109-4c8f-b75d-0374e9b38239",
+      "comment": "",
+      "command": "type",
+      "target": "id=mod-rscontact-mobile-phone-91",
+      "targets": [
+        ["id=mod-rscontact-mobile-phone-91", "id"],
+        ["name=mod_rscontact_mobile_phone", "name"],
+        ["css=#mod-rscontact-mobile-phone-91", "css:finder"],
+        ["xpath=//input[@id='mod-rscontact-mobile-phone-91']", "xpath:attributes"],
+        ["xpath=//form[@id='mod-rscontact-contact-form-91']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "8-999-99-99-99"
+    }, {
+      "id": "6552e286-8112-4428-8597-a4309858cba7",
+      "comment": "",
+      "command": "type",
+      "target": "id=mod-rscontact-subject-91",
+      "targets": [
+        ["id=mod-rscontact-subject-91", "id"],
+        ["name=mod_rscontact_subject", "name"],
+        ["css=#mod-rscontact-subject-91", "css:finder"],
+        ["xpath=//input[@id='mod-rscontact-subject-91']", "xpath:attributes"],
+        ["xpath=//form[@id='mod-rscontact-contact-form-91']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Хочу собачку"
+    }, {
+      "id": "f8698be3-5e50-4863-83dc-ab0576e5ff08",
+      "comment": "",
+      "command": "click",
+      "target": "id=mod-rscontact-submit-btn-91",
+      "targets": [
+        ["id=mod-rscontact-submit-btn-91", "id"],
+        ["name=mod_rscontact_submit-btn-91", "name"],
+        ["css=#mod-rscontact-submit-btn-91", "css:finder"],
+        ["xpath=//button[@id='mod-rscontact-submit-btn-91']", "xpath:attributes"],
+        ["xpath=//form[@id='mod-rscontact-contact-form-91']/fieldset/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e65ec8e-1172-4669-ad32-c7d3439155d8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8ffbd0f6-c50d-49f5-9d9e-3c13ade677c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d9a7f8f-e3ae-460a-89f3-fd1951c11f07"]
+  }],
+  "urls": ["https://qahacking.guru/"],
+  "plugins": []
+}
